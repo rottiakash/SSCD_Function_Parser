@@ -35,7 +35,7 @@ int add(int a, int b)
 }
 ```
 ### Execution
-
+![Execution Terminal](https://github.com/rottiakash/SSCD_Function_Parser/raw/master/markdown/Screen%20Shot%202020-04-09%20at%2012.48.47.png "Execution Terminal")
 ### Output
 ```
 Function Declaration Parsed
