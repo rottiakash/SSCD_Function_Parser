@@ -32,7 +32,7 @@ DPARAMT:X' 'ID','DPARAMT {sprintf(temp1,"Parameter %s of type %s\n",$3,$1);strca
         | X' 'ID {sprintf(temp1,"Parameter %s of type %s\n",$3,$1);strcat(vars,temp1);varcount++;}
         |X' 'ID','' 'DPARAMT {sprintf(temp1,"Parameter %s of type %s\n",$3,$1);strcat(vars,temp1);varcount++;}
 X: TYPE {sprintf(temp,"Parameter of type %s\n",$1);strcat(params,temp);pcount++;}
-E:%empty
+E:/* empty */ 
 DEF:TYPE' 'ID'('DPARAMT')'BODY {printf("\nFunction Defination Parsed\nFunction Name: %s\nFunction Return Type: %s\nNumber of Parameter:%d\n%s\nFunction Body:%s\n\n",$3,$1,varcount,vars,$7);varcount=0;strcpy(vars,"");}
    | TYPE' 'ID'('E')'BODY {printf("\nFunction Defination Parsed\nFunction Name: %s\nFunction Return Type: %s\nNumber of Parameter:%d\n%s\nFunction Body:%s\n\n",$3,$1,varcount,vars,$7);varcount=0;strcpy(vars,"");}
 ;
