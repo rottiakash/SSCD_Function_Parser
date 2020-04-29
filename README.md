@@ -38,6 +38,7 @@ int add(int a, int b)
 ![Execution Terminal](https://github.com/rottiakash/SSCD_Function_Parser/raw/master/markdown/Screen%20Shot%202020-04-09%20at%2012.48.47.png "Execution Terminal")
 ### Output
 ```
+
 Function Declaration Parsed
 Function Name: add
 Function Return Type: int
@@ -45,6 +46,7 @@ Number of Parameter:2
 Parameter of type int
 Parameter of type int
 
+*****************
 
 
 Function Defination Parsed
@@ -52,10 +54,7 @@ Function Name: main
 Function Return Type: void
 Number of Parameter:0
 
-Function Body:{
-    int sum = add(a, b);
-    printf("The sum is %d", sum);
-}
+*****************
 
 
 Function Defination Parsed
@@ -65,7 +64,40 @@ Number of Parameter:2
 Parameter b of type int
 Parameter a of type int
 
-Function Body:{
-    return (a + b);
-}
+*****************
+
+Starting static type checker
+[
+    {
+        "type": "Declaration",
+        "params": [
+            "int",
+            "int"
+        ],
+        "name": "add",
+        "Return Type": "int"
+    },
+    {
+        "type": "Defination",
+        "params": [],
+        "name": "main",
+        "Return Type": "void"
+    },
+    {
+        "type": "Defination",
+        "params": [
+            "int",
+            "int"
+        ],
+        "name": "add",
+        "Return Type": "int"
+    }
+]
+
+*****************
+
+
+No Type Errors found
+
+*****************
 ```
