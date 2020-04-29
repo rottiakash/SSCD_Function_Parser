@@ -5,4 +5,5 @@ lex parse.l
 yacc -d parse.y
 cc -w lex.yy.c y.tab.c -ll
 ./a.out $filename > output.txt
+python3 parse.py >> output.txt
 echo "Result saved in output.txt"
