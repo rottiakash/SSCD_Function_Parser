@@ -2,7 +2,7 @@
 # SS&CD Project
 
 ## Steps to run
-Make sure LEX and YACC is installed
+Make sure LEX,YACC and python3 is installed
 
 To install on Ubuntu using apt package manager:
 ```sh
